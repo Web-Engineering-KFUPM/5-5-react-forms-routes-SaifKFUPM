@@ -1,3 +1,4 @@
+import { Routes, Route, NavLink } from 'react-router-dom';
 export default function Home() {
   return (
     <section>
@@ -15,7 +16,9 @@ export default function Home() {
         <div className="card">
           <h3>Latest Announcements</h3>
           <ul className="list">
-            <li>🎉 Course kickoff: <b>Nov 3, 2025</b></li>
+            <li>
+              🎉 Course kickoff: <b>Nov 3, 2025</b>
+            </li>
             <li>📦 Starter repo posted in LMS</li>
             <li>🧪 Lab 1: Router + Form Validation</li>
           </ul>

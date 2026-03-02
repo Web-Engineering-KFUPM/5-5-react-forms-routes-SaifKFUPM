@@ -1,13 +1,16 @@
-import { useState } from "react";
+import { Routes, Route, NavLink } from 'react-router-dom';
+import { useState } from 'react';
 
 export default function Registration() {
-  const [email, setEmail] = useState("");
+  const [email, setEmail] = useState('');
 
   const [errors, setErrors] = useState({});
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    {/*Form validations*/}
+    {
+      /*Form validations*/
+    }
 
     // alert(`Regiteration submit: ${email}`);
   };
@@ -29,22 +32,22 @@ export default function Registration() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             aria-invalid={Boolean(errors.email)}
-            aria-describedby={errors.email ? "email-error" : undefined}
+            aria-describedby={errors.email ? 'email-error' : undefined}
           />
           {errors.email && (
-            <p id="email-error" className="error">{errors.email}</p>
+            <p id="email-error" className="error">
+              {errors.email}
+            </p>
           )}
         </div>
-        <div className="form-row">
-           {/*password*/}
-        </div>
+        <div className="form-row">{/*password*/}</div>
 
-        <fieldset className="form-row">
-          {/*Radio Button for gender*/}
-        </fieldset>
+        <fieldset className="form-row">{/*Radio Button for gender*/}</fieldset>
 
-          {/*Disable the submit button until all requirements met*/}
-        <button type="submit" className="btn">Register</button>
+        {/*Disable the submit button until all requirements met*/}
+        <button type="submit" className="btn">
+          Register
+        </button>
       </form>
 
       <div className="card info">

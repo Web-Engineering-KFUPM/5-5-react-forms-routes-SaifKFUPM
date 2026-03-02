@@ -1,3 +1,4 @@
+import { Routes, Route, NavLink } from 'react-router-dom';
 export default function About() {
   return (
     <section>
@@ -12,7 +13,9 @@ export default function About() {
           <h3>What You’ll Learn</h3>
           <ul className="list">
             <li>⚙️ Setting up client-side routing</li>
-            <li>🧠 Controlled inputs with <code>useState</code></li>
+            <li>
+              🧠 Controlled inputs with <code>useState</code>
+            </li>
             <li>✅ Validating user input and showing errors</li>
           </ul>
         </div>
